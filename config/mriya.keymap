@@ -34,12 +34,32 @@
 
         enter_left {
             bindings = <&kp ENTER>;
-            key-positions = <16 29>;
+            key-positions = <15 17>;
         };
 
         enter_right {
             bindings = <&kp ENTER>;
-            key-positions = <30 19>;
+            key-positions = <18 20>;
+        };
+
+        backspace_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <27 28>;
+        };
+
+        backspace_right {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <32 31>;
+        };
+
+        delete_left {
+            bindings = <&kp DELETE>;
+            key-positions = <26 27>;
+        };
+
+        delete_right {
+            bindings = <&kp DELETE>;
+            key-positions = <32 33>;
         };
     };
 
@@ -47,7 +67,7 @@
         change_lang: change_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp LEFT_SHIFT &kt LEFT_ALT &to 1>;
+            bindings = <&kt LEFT_ALT &kp LEFT_SHIFT &kt LEFT_ALT &mo 1>;
             label = "CHANGE_LANG";
         };
     };
@@ -57,10 +77,10 @@
 
         default_layer {
             bindings = <
-  &kp GRAVE  &kp Q  &kp W     &kp E      &kp R            &kp T        &kp Y            &kp U            &kp I      &kp O                   &kp P     &kp LBKT
-  &kp LCTRL  &kp A  &kp S     &kp D      &kp F            &kp G        &kp H            &kp J            &kp K      &kp L                   &kp SEMI  &mt RCTRL SQT
-  &kp LALT   &kp Z  &kp X     &kp C      &kp V            &kp B        &kp N            &kp M            &kp COMMA  &kp DOT                 &kp FSLH  &kp RIGHT_BRACKET
-                    &kp LGUI  &lt 4 ESC  &mt LSHFT SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &mt RSHFT SPACE  &lt 4 DEL  &mt RGUI RIGHT_BRACKET
+  &kp GRAVE  &kp Q  &kp W     &kp E      &kp R            &kp T        &kp Y            &kp U            &kp I      &kp O      &kp P     &kp LBKT
+  &kp LCTRL  &kp A  &kp S     &kp D      &kp F            &kp G        &kp H            &kp J            &kp K      &kp L      &kp SEMI  &mt RCTRL SQT
+  &kp LALT   &kp Z  &kp X     &kp C      &kp V            &kp B        &kp N            &kp M            &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
+                    &kp LGUI  &lt 4 ESC  &mt LSHFT SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &mt RSHFT SPACE  &lt 4 DEL  &kp MINUS
             >;
         };
 
