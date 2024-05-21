@@ -113,10 +113,10 @@
 
         raise_layer {
             bindings = <
-  &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &kp C_VOL_UP  &kp HOME   &kp END    &kp PRINTSCREEN  &kp SLCK         &kp CAPS
-  &mt LCTRL EQUAL  &sk LEFT_WIN          &sk LEFT_ALT           &sk LCTRL         &sk LEFT_SHIFT     &kp MINUS    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT        &kp INS          &mt RCTRL K_APP
-  &kp MINUS        &kp BACKSLASH         &kp PIPE               &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER    &kp C_VOL_DN  &kp PG_UP  &kp PG_DN  &kp K_MUTE       &kp PAUSE_BREAK  &trans
-                                         &tog 1                 &trans            &trans             &lt 5 RET    &lt 5 ESC     &trans     &trans     &trans
+  &trans                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &kp C_VOL_UP  &kp HOME   &kp END    &kp PRINTSCREEN  &kp SLCK         &kp CAPS
+  &mt LS(LEFT_ALT) EQUAL  &sk LEFT_WIN          &sk LEFT_ALT           &sk LCTRL         &sk LEFT_SHIFT     &kp MINUS    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT        &kp INS          &mt RCTRL K_APP
+  &mt LCTRL GRAVE         &kp BACKSLASH         &kp PIPE               &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER    &kp C_VOL_DN  &kp PG_UP  &kp PG_DN  &kp K_MUTE       &kp PAUSE_BREAK  &trans
+                                                &tog 1                 &trans            &trans             &lt 5 RET    &lt 5 ESC     &trans     &trans     &trans
             >;
         };
 
