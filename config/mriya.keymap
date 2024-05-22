@@ -80,7 +80,7 @@
   &kp ESCAPE  &kp Q  &kp W     &kp E      &kp R            &kp T        &kp Y            &kp U            &kp I      &kp O      &kp P     &kp LBKT
   &kp LALT    &kp A  &kp S     &kp D      &kp F            &kp G        &kp H            &kp J            &kp K      &kp L      &kp SEMI  &mt RCTRL SQT
   &kp LCTRL   &kp Z  &kp X     &kp C      &kp V            &kp B        &kp N            &kp M            &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
-                     &kp LGUI  &lt 4 ESC  &mt LSHFT SPACE  &lt 3 TAB    &lt 2 BACKSPACE  &mt RSHFT SPACE  &lt 4 DEL  &kp MINUS
+                     &kp LGUI  &lt 4 ESC  &mt LSHFT SPACE  &lt 2 TAB    &lt 3 BACKSPACE  &mt RSHFT SPACE  &lt 4 DEL  &kp MINUS
             >;
         };
 
@@ -95,9 +95,9 @@
 
         lower_layer {
             bindings = <
-  &kp GRAVE          &kp F1    &kp F2  &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
-  &mt LEFT_ALT PLUS  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LCTRL EQUAL    &kp N1    &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp PERIOD
+  &trans             &kp F1    &kp F2  &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
+  &mt LEFT_ALT PIPE  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+  &mt LCTRL GRAVE    &kp N1    &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp PERIOD
                                &tog 1  &lt 5 TAB  &trans    &mo 4        &mo 4      &trans    &lt 5 DEL  &trans
             >;
         };
@@ -115,7 +115,7 @@
             bindings = <
   &trans                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &kp C_VOL_UP  &kp HOME   &kp END    &kp PRINTSCREEN  &kp SLCK         &kp CAPS
   &mt LS(LEFT_ALT) EQUAL  &sk LEFT_WIN          &sk LEFT_ALT           &sk LCTRL         &sk LEFT_SHIFT     &kp MINUS    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT        &kp INS          &mt RCTRL K_APP
-  &mt LCTRL GRAVE         &kp BACKSLASH         &kp PIPE               &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER    &kp C_VOL_DN  &kp PG_UP  &kp PG_DN  &kp K_MUTE       &kp PAUSE_BREAK  &trans
+  &mt LCTRL GRAVE         &kp BACKSLASH         &kp PIPE               &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER    &kp C_VOL_DN  &kp PG_UP  &kp PG_DN  &kp C_MUTE       &kp PAUSE_BREAK  &trans
                                                 &tog 1                 &trans            &trans             &lt 5 RET    &lt 5 ESC     &trans     &trans     &trans
             >;
         };
