@@ -61,6 +61,11 @@
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
         };
+
+        sk_shift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -77,10 +82,10 @@
 
         default_layer {
             bindings = <
-  &kp ESCAPE  &kp Q  &kp W     &kp E      &kp R            &kp T        &kp Y            &kp U            &kp I      &kp O      &kp P     &kp LBKT
-  &kp LALT    &kp A  &kp S     &kp D      &kp F            &kp G        &kp H            &kp J            &kp K      &kp L      &kp SEMI  &mt RCTRL SQT
-  &kp LCTRL   &kp Z  &kp X     &kp C      &kp V            &kp B        &kp N            &kp M            &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_BRACKET
-                     &kp LGUI  &lt 4 ESC  &mt LSHFT SPACE  &lt 2 TAB    &lt 3 BACKSPACE  &mt RSHFT SPACE  &lt 4 DEL  &kp MINUS
+  &kp ESCAPE  &kp Q  &kp W     &kp E      &kp R            &kp T        &kp Y            &kp U            &kp I      &kp O           &kp P     &kp LBKT
+  &kp LALT    &kp A  &kp S     &kp D      &kp F            &kp G        &kp H            &kp J            &kp K      &kp L           &kp SEMI  &kp SQT
+  &kp LCTRL   &kp Z  &kp X     &kp C      &kp V            &kp B        &kp N            &kp M            &kp COMMA  &kp DOT         &kp FSLH  &kp RIGHT_BRACKET
+                     &kp LGUI  &lt 4 ESC  &mt LSHFT SPACE  &lt 2 TAB    &lt 3 BACKSPACE  &mt RSHFT SPACE  &lt 4 DEL  &sk LEFT_SHIFT
             >;
         };
 
@@ -93,30 +98,30 @@
             >;
         };
 
-        lower_layer {
+        prog_layer {
             bindings = <
-  &trans             &kp F1    &kp F2  &kp F3     &kp F4    &kp F5       &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
-  &mt LEFT_ALT PIPE  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LCTRL GRAVE    &kp N1    &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp PERIOD
-                               &tog 1  &lt 5 TAB  &trans    &mo 4        &mo 4      &trans    &lt 5 DEL  &trans
+  &trans  &kp EXCLAMATION  &kp AT     &kp HASH      &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPERSAND  &kp ASTRK          &kp DQT   &kp COLON         &kp SLASH
+  &trans  &kp GRAVE        &kp TILDE  &kp MINUS     &kp PLUS   &kp EQUAL     &kp MINUS  &kp LBKT       &kp RIGHT_BRACKET  &kp LPAR  &kp RPAR          &kp PIPE
+  &trans  &kp N1           &kp N2     &kp ASTERISK  &kp SLASH  &kp PERIOD    &kp UNDER  &kp LBRC       &kp RBRC           &kp LT    &kp GREATER_THAN  &kp BACKSLASH
+                           &trans     &lt 5 TAB     &tog 1     &mo 4         &mo 4      &trans         &lt 5 DEL          &trans
             >;
         };
 
-        math_layer {
+        numlock_layer {
             bindings = <
-  &trans  &trans           &kp KP_N7        &kp KP_N8  &kp KP_N9        &kp EQUAL    &kp EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE  &trans      &trans     &trans
-  &trans  &kp GRAVE        &kp KP_N4        &kp KP_N5  &kp KP_N6        &kp MINUS    &kp MINUS  &kp PLUS          &kp ASTERISK     &kp SLASH   &kp COLON  &kp PIPE
-  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3  &kp UNDER    &kp UNDER  &kp GREATER_THAN  &kp COMMA        &kp PERIOD  &kp SLASH  &kp BACKSLASH
-                           &tog 1           &mo 5      &trans           &trans       &trans     &trans            &trans           &trans
+  &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp CAPSLOCK     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp STAR   &trans
+  &trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &kp KP_NUMLOCK   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp SLASH
+  &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS   &kp DOT
+                   &trans   &mo 5    &trans   &trans     &trans           &trans           &trans           &trans
             >;
         };
 
         raise_layer {
             bindings = <
-  &trans                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &kp C_VOL_UP  &kp HOME   &kp END    &kp PRINTSCREEN  &kp SLCK         &kp CAPS
-  &mt LS(LEFT_ALT) EQUAL  &sk LEFT_WIN          &sk LEFT_ALT           &sk LCTRL         &sk LEFT_SHIFT     &kp MINUS    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT        &kp INS          &mt RCTRL K_APP
-  &mt LCTRL GRAVE         &kp BACKSLASH         &kp PIPE               &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER    &kp C_VOL_DN  &kp PG_UP  &kp PG_DN  &kp C_MUTE       &kp PAUSE_BREAK  &trans
-                                                &tog 1                 &trans            &trans             &lt 5 RET    &lt 5 ESC     &trans     &trans     &trans
+  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE  &kp K_PLAY_PAUSE    &kp C_VOL_UP  &kp HOME   &kp END    &none      &none  &kp LC(PRINTSCREEN)
+  &trans        &sk LEFT_WIN  &sk LEFT_ALT  &sk LCTRL     &sk LEFT_SHIFT    &none               &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT  &none  &kp PRINTSCREEN
+  &kp INSERT    &none         &kp C_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP   &kp K_MUTE          &kp C_VOL_DN  &kp PG_UP  &kp PG_DN  &none      &none  &kp LS(PRINTSCREEN)
+                              &trans        &trans        &trans            &lt 5 RET           &lt 5 ESC     &trans     &trans     &trans
             >;
         };
 
