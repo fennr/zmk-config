@@ -24,12 +24,12 @@
 
         lang_right {
             bindings = <&change_lang>;
-            key-positions = <30 31>;
+            key-positions = <31 34>;
         };
 
         lang_left {
             bindings = <&change_lang>;
-            key-positions = <28 29>;
+            key-positions = <28 25>;
         };
 
         enter_left {
@@ -43,23 +43,23 @@
         };
 
         backspace_left {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <27 28>;
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <28 31>;
         };
 
         backspace_right {
             bindings = <&kp BACKSPACE>;
-            key-positions = <32 31>;
+            key-positions = <32 34>;
         };
 
         delete_left {
-            bindings = <&kp DELETE>;
-            key-positions = <26 27>;
+            bindings = <&kp LC(DELETE)>;
+            key-positions = <27 32>;
         };
 
         delete_right {
             bindings = <&kp DELETE>;
-            key-positions = <32 33>;
+            key-positions = <25 27>;
         };
 
         sk_shift {
@@ -106,10 +106,10 @@
 
         default_layer {
             bindings = <
-  &kp ESCAPE  &kp Q  &kp W     &kp E  &kp R            &kp T    &kp Y  &kp U            &kp I      &kp O    &kp P     &kp LBKT
-  &kp LALT    &kp A  &kp S     &kp D  &kp F            &kp G    &kp H  &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
-  &kp LCTRL   &kp Z  &kp X     &kp C  &kp V            &kp B    &kp N  &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                     &kp LGUI  &mo 4  &mt LSHFT SPACE  &mo 2    &mo 3  &mt RSHFT SPACE  &mo 4      &kp TAB
+  &kp ESCAPE  &kp Q  &kp W     &kp E  &kp R      &kp T          &kp Y        &kp U      &kp I      &kp O              &kp P     &kp LBKT
+  &kp LALT    &kp A  &kp S     &kp D  &kp F      &kp G          &kp H        &kp J      &kp K      &kp L              &kp SEMI  &kp SQT
+  &kp LCTRL   &kp Z  &kp X     &kp C  &kp V      &kp B          &kp N        &kp M      &kp COMMA  &kp DOT            &kp FSLH  &kp RIGHT_BRACKET
+                     &kp LGUI  &mo 4  &kp LSHFT  &lt 2 SPACE    &lt 3 SPACE  &kp RSHFT  &mo 4      &kp LC(BACKSPACE)
             >;
         };
 
