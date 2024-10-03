@@ -24,12 +24,12 @@
 
         lang_right {
             bindings = <&change_lang>;
-            key-positions = <31 20>;
+            key-positions = <31 30>;
         };
 
         lang_left {
             bindings = <&change_lang>;
-            key-positions = <28 15>;
+            key-positions = <28 29>;
         };
 
         enter_left {
@@ -49,7 +49,7 @@
 
         backspace_right {
             bindings = <&kp BACKSPACE>;
-            key-positions = <32 34>;
+            key-positions = <20 22>;
         };
 
         delete_left {
@@ -59,7 +59,7 @@
 
         delete_right {
             bindings = <&kp DELETE>;
-            key-positions = <25 27>;
+            key-positions = <32 33>;
         };
 
         sk_shift {
