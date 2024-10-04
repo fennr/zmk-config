@@ -16,10 +16,7 @@
 
 &lt { quick_tap_ms = <200>; };
 
-&mt {
-    quick_tap_ms = <210>;
-    flavor = "balanced";
-};
+&mt { quick_tap_ms = <210>; };
 
 / {
     combos {
