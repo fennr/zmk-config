@@ -49,7 +49,7 @@
 
         backspace_right {
             bindings = <&kp BACKSPACE>;
-            key-positions = <20 22>;
+            key-positions = <26 27>;
         };
 
         delete_left {
@@ -135,7 +135,7 @@
             bindings = <
   &trans  &kp F1   &kp F2       &kp F3   &kp F4     &kp F5     &kp CAPSLOCK    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS         &kp ASTERISK
   &trans  &kp F6   &kp F7       &kp F8   &kp F9     &kp F10    &kp KP_NUMLOCK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp SLASH
-  &trans  &kp F11  &kp F12      &kp F13  &kp F14    &kp F15    &kp ENTER       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA        &kp DOT
+  &trans  &kp F11  &kp F12      &kp F13  &kp F14    &kp F15    &kp BACKSPACE   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA        &kp DOT
                    &kp LS(TAB)  &mo 5    &kp SPACE  &kp TAB    &trans          &trans           &change_lang     &trans
             >;
         };
