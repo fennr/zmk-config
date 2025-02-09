@@ -34,12 +34,12 @@
 
         enter_left {
             bindings = <&kp ENTER>;
-            key-positions = <15 28>;
+            key-positions = <15 17>;
         };
 
         enter_right {
             bindings = <&kp ENTER>;
-            key-positions = <20 31>;
+            key-positions = <20 18>;
         };
 
         backspace_left {
