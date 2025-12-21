@@ -22,7 +22,7 @@
         compatible = "zmk,combos";
 
         lang_right {
-            bindings = <&change_lang>;
+            bindings = <&ch_lang_mac>;
             key-positions = <31 30>;
         };
 
@@ -47,7 +47,7 @@
         };
 
         backspace_right {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <26 27>;
         };
 
@@ -57,7 +57,7 @@
         };
 
         delete_right {
-            bindings = <&kp DELETE>;
+            bindings = <&kp LA(DELETE)>;
             key-positions = <32 33>;
         };
 
@@ -130,10 +130,10 @@
 
         prog_layer {
             bindings = <
-  &trans     &kp EXCLAMATION  &kp AT     &kp HASH   &kp DLLR      &kp PRCNT    &kp CARET      &kp AMPERSAND  &kp ASTRK          &kp DQT   &kp COLON         &kp SLASH
-  &mo 3      &kp GRAVE        &kp TILDE  &kp COLON  &kp PLUS      &kp EQUAL    &kp MINUS      &kp LBKT       &kp RIGHT_BRACKET  &kp LPAR  &kp RPAR          &kp PIPE
-  &kp LCTRL  &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT     &kp ENTER    &kp UNDER      &kp LBRC       &kp RBRC           &kp LT    &kp GREATER_THAN  &kp BACKSLASH
-                              &mo 5      &tog 1     &kp LEFT_ALT  &trans       &kp BACKSPACE  &kp SPACE      &kp DELETE         &trans
+  &kp LEFT_ALT  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DLLR      &kp PRCNT    &kp CARET      &kp AMPERSAND  &kp ASTRK          &kp DQT   &kp COLON         &kp SLASH
+  &mo 3         &kp GRAVE        &kp TILDE  &kp COLON  &kp PLUS      &kp EQUAL    &kp MINUS      &kp LBKT       &kp RIGHT_BRACKET  &kp LPAR  &kp RPAR          &kp PIPE
+  &kp LCTRL     &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT     &kp ENTER    &kp UNDER      &kp LBRC       &kp RBRC           &kp LT    &kp GREATER_THAN  &kp BACKSLASH
+                                 &mo 5      &tog 1     &kp LEFT_ALT  &trans       &kp BACKSPACE  &kp SPACE      &kp DELETE         &trans
             >;
         };
 
