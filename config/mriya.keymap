@@ -47,7 +47,7 @@
         };
 
         backspace_right {
-            bindings = <&kp LA(BACKSPACE)>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <26 27>;
         };
 
@@ -57,7 +57,7 @@
         };
 
         delete_right {
-            bindings = <&kp LA(DELETE)>;
+            bindings = <&kp DELETE>;
             key-positions = <32 33>;
         };
 
@@ -144,10 +144,10 @@
 
         numlock_layer {
             bindings = <
-  &trans  &kp F1   &kp F2       &kp F3   &kp F4     &kp F5     &kp CAPSLOCK   &kp N7  &kp N8        &kp N9  &kp PLUS   &kp ASTERISK
-  &trans  &kp F6   &kp F7       &kp F8   &kp F9     &kp F10    &kp ENTER      &kp N4  &kp N5        &kp N6  &kp N0     &kp SLASH
-  &trans  &kp F11  &kp F12      &kp F13  &kp F14    &kp F15    &kp BACKSPACE  &kp N1  &kp N2        &kp N3  &kp COMMA  &kp DOT
-                   &kp LS(TAB)  &mo 5    &kp SPACE  &kp TAB    &trans         &trans  &change_lang  &trans
+  &trans  &kp F1   &kp F2       &kp F3   &kp F4     &kp F5     &kp CAPSLOCK   &kp N7  &kp N8        &kp N9   &kp PLUS   &kp ASTERISK
+  &trans  &kp F6   &kp F7       &kp F8   &kp F9     &kp F10    &kp ENTER      &kp N4  &kp N5        &kp N6   &kp N0     &kp SLASH
+  &trans  &kp F11  &kp F12      &kp F13  &kp F14    &kp F15    &kp BACKSPACE  &kp N1  &kp N2        &kp N3   &kp COMMA  &kp DOT
+                   &kp LS(TAB)  &mo 5    &kp SPACE  &kp TAB    &trans         &trans  &change_lang  &kp DEL
             >;
         };
 
