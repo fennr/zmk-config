@@ -107,7 +107,7 @@
         ch_lang_mac: ch_lang_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LCTRL &kp SPACE &kt LCTRL &tog 1>;
+            bindings = <&kt LCTRL &kt LEFT_ALT &kp SPACE &kt LCTRL &kt LEFT_ALT &tog 1>;
             label = "CH_LANG_MAC";
         };
     };
